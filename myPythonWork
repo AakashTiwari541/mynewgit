@@ -1,0 +1,13 @@
+#B U B B L E     S O R T
+
+def bubbleSort(arr):
+    n= len(arr)
+    for j in range(n-1):
+        #didSort= False
+        for i in range(n-1):
+            if arr[i]>arr[i+1]:
+                arr[i],arr[i+1]=arr[i+1],arr[i]
+
+arr=[9,8,6,7,5]
+bubbleSort(arr)
+print(arr)
